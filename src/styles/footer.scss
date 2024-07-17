@@ -1,0 +1,41 @@
+@import"colors"; 
+
+.footer{
+    background-color:$dark ;
+    display: flex;
+    justify-content: space-between;
+    >p{
+        color: white;
+        font-family: cursive;
+        justify-content: center;
+        font-size: small;
+    }
+    >div{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        p{
+            color: white;
+            font-family: cursive;
+            margin: 0 1rem;
+            font-size: small;
+
+        }
+        a{
+            color: white;
+            margin: 0 3px;
+
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        >p{
+            text-align: center;
+        }
+    }
+}
